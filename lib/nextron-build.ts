@@ -39,11 +39,6 @@ const execaOptions: execa.Options = {
 
     logger.info('Building renderer process')
     await execa('next', ['build', path.join(cwd, rendererSrcDir)], execaOptions)
-    await execa(
-      'next',
-      ['export', '-o', appDir, path.join(cwd, rendererSrcDir)],
-      execaOptions
-    )
 
     logger.info('Building main process')
     await execa(

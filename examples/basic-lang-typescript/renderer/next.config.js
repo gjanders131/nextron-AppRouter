@@ -4,6 +4,8 @@ module.exports = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  distDir: '../app',
   webpack: (config) => {
     return config
   },
