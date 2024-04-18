@@ -40,7 +40,7 @@
     "prebuild": "rimraf bin",
     "build": "rollup -c --bundleConfigAsCjs",
     "prepublishOnly": "NODE_ENV=production npm run build",
-    "prepare": "husky"
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@babel/core": "7.24.4",
